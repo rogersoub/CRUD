@@ -29,11 +29,13 @@ class Name{
             //btn de atualizar
             const updateBTN = document.createElement('button');
             updateBTN.textContent="Atualizar";
+            updateBTN.className = "btnUp";
             updateBTN.onclick= () => this.update(i);//função anonima ao clicar. Pega o tal indice 
 
             //btn de deletar
             const deletBTN = document.createElement('button');
             deletBTN.textContent = "Deletar";
+            deletBTN.className = "btnDel";
             deletBTN.onclick = () => this.delete(i);
 
             li.appendChild(updateBTN);//colocando o botoes na li 
